@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restify Hotel Booking </title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#f4f4f4;
+    }
+
+    /* Navbar */
+    nav{
+        background:#2c3e50;
+        color:white;
+        padding:15px 50px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    nav h1{
+        font-size:24px;
+    }
+
+    nav ul{
+        list-style:none;
+        display:flex;
+        gap:20px;
+    }
+
+    nav ul li{
+        cursor:pointer;
+    }
+
+    nav ul li:hover{
+        color:#f1c40f;
+    }
+
+    /* Hero Section */
+    .hero{
+        height:80vh;
+        background:url('https://images.unsplash.com/photo-1501117716987-c8e1ecb210d4') no-repeat center center/cover;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:rgb(0, 0, 0);
+        text-align:center;
+    }
+
+    .hero h2{
+        font-size:40px;
+        margin-bottom:20px;
+    }
+
+    .hero button{
+        padding:12px 25px;
+        font-size:16px;
+        background:#f1c40f;
+        border:none;
+        cursor:pointer;
+        border-radius:5px;
+    }
+
+    .hero button:hover{
+        background:#d4ac0d;
+    }
+
+    /* Booking Form */
+    .booking{
+        background:white;
+        width:80%;
+        margin:-60px auto 40px;
+        padding:30px;
+        border-radius:10px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .booking h3{
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .form-group{
+        display:flex;
+        gap:20px;
+        margin-bottom:15px;
+    }
+
+    .form-group input, 
+    .form-group select{
+        flex:1;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+
+    .booking button{
+        width:100%;
+        padding:12px;
+        background:#2c3e50;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    .booking button:hover{
+        background:#1a252f;
+    }
+
+    /* Footer */
+    footer{
+        background:#2c3e50;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+
+.image-row{
+    display:flex;           /* Makes images in one row */
+    gap:20px;               /* Space between images */
+    justify-content:center; /* Center align */
+}
+
+.image-row img{
+    width:200px;
+    height:150px;
+    border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>Restify Stay</h1>
+    <ul>
+        <li>Home</li>
+        <li>Rooms</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<marquee><div class="image-row">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+        <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+    <img src="cadillacc.jpg">
+</div></marquee>
+
+<section class="hero">
+    <div>
+        <h2>Book Your Dream Stay</h2>
+        <button>Explore Rooms</button>
+    </div>
+</section>
+
+<section class="booking">
+    <h3>Book a Room</h3>
+
+    <div class="form-group">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+    </div>
+
+    <div class="form-group">
+        <h6>in date</h6>
+        <input type="date">
+        <h6>out date</h6>
+        <input type="date">
+    </div>
+    <div class="form-group">
+        <input type="roomnum" placeholder="num">
+        <input type="phnum" placeholder="phnum">
+    </div>
+
+    <div class="form-group">
+        <select>
+            <option>Select Room Type</option>
+            <option>Single Room</option>//1500
+            <option>Double Room</option>//3000
+            <option>Deluxe Room</option>//6000
+            <option>Suite</option>//10000
+        </select>
+
+        <select>
+            <option>Guests</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+        </select>
+    </div>
+
+    <button>book now</button>
+</section>
+
+<footer>
+    © 2026 RestifyStay Hotel | All Rights Reserved
+</footer>
+
+</body>
+</html>
